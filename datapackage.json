@@ -1,0 +1,31 @@
+{ 
+ "name": "bosnia-tenders",
+ "title": "Tenders awarded in Bosnia and Herzegovina",
+ "description": "Tenders awarded in Bosnia and Herzegovina, scraped for the period of 01.04.2013 - 31.10.2013",
+ "sources": [{
+  "name":"ekapija",
+  "web":"http://www.ekapija.com/website/bih/search.php?terId=3&doctype=3&st=tw"
+  }],
+  "resources": [{
+    "path":"data/bosnia-tenders.csv",
+    "encoding":"utf-8",
+    "schema":{
+      "fields":[
+        {"id":"tenderer",
+          "type":"string"},
+        {"id":"winnerUrl",
+          "type":"string"},
+        {"id":"winner",
+          "type":"string"},
+        {"id":"amount",
+          "type":"string"},
+        {"id":"tendererUrl",
+          "type":"string"},
+        {"id":"date",
+          "type":"string"},
+        {"id":"title",
+          "type":"string"}
+        ]}
+    }]
+
+}
